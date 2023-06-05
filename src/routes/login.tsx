@@ -1,33 +1,35 @@
 import '../index.css';
-import NavBar from '../Components/NavBar.tsx';
-import Footer from '../Components/Footer.tsx';
-import Reactlogo from '../assets/react.svg';
 
 export default function Login() {
   return (
     <>
-      <NavBar />
       <main>
-        <div className="mx-auto flex flex-col justify-center">
-          <picture className="mx-auto">
-            <img className="w-40" src={Reactlogo} alt="Logo" />
-          </picture>
-          <form action="" className="mx-auto my-6">
-            <div className="my-4">
-              <label htmlFor="email">Enter your email: </label>
-              <input type="email" name="email" id="email" required />
+        <div className="bg-white flex justify-center items-center">
+          <div className="py-12 px-12 bg-white rounded-2xl shadow-xl z-20">
+            <div>
+              <h1 className="text-3xl font-bold text-center mb-4 cursor-pointer">Log In</h1>
+              <p className="w-80 text-center text-sm mb-8 font-semibold text-gray-700 tracking-wide cursor-pointer"></p>
             </div>
-            <div className="my-4">
-              <label htmlFor="password">Enter your password: </label>
-              <input type="password" name="password" id="password" required />
+            <div className="space-y-4">
+              <input
+                type="text"
+                placeholder="UserName"
+                className="block text-sm py-3 px-4 rounded-lg w-full border outline-none"
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                className="block text-sm py-3 px-4 rounded-lg w-full border outline-none"
+              />
             </div>
-            <div className="form-example">
-              <input type="submit" value="Confirm" />
+            <div className="text-center mt-6">
+              <button className="py-3 w-64 text-xl text-white bg-black hover:text-black hover:bg-white duration-300 rounded-2xl">
+                Log In
+              </button>
             </div>
-          </form>
+          </div>
         </div>
       </main>
-      <Footer />
     </>
   );
 }

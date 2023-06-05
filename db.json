@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "name": "Jean",
+      "destination": "Siege",
+      "depart": "Grezieu la Varenne",
+      "car": "Clio",
+      "heure": 0,
+      "minute": 30,
+      "essencePrice": 2,
+      "l100": 7,
+      "distance": 10,
+      "place": 1
+    },
+    {
+      "name": "Pierre",
+      "destination": "Siege",
+      "depart": "Marcy",
+      "car": "308",
+      "heure": 0,
+      "minute": 24,
+      "essencePrice": 2,
+      "l100": 9,
+      "distance": 7,
+      "place": 3
+    },
+    {
+      "name": "Roger",
+      "destination": "Siege",
+      "depart": "Lyon 5",
+      "car": "Megane",
+      "heure": 0,
+      "minute": 15,
+      "essencePrice": 2,
+      "l100": 12,
+      "distance": 3,
+      "place": 3
+    }
+  ],
+  "users": [
+    { "username": "testuser", "password": "azerty" },
+    { "username": "testuser2", "password": "qwerty" }
+  ]
+}
