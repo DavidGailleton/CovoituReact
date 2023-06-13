@@ -5,7 +5,7 @@ export default function NavBar() {
     <>
       <header className="bg-white flex justify-between items-center gap-6 px-6 py-4">
         <Link to={`/`}>
-          <h1 className="text-3xl font-serif">CovoituReact</h1>
+          <h1 className="text-3xl font-serif">My Covoiturage</h1>
         </Link>
         <menu className="flex flex-row justify-center gap-6">
           <li className="">

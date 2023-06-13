@@ -1,14 +1,14 @@
 import '../index.css';
 import { Link } from 'react-router-dom';
 
-export default function Login() {
+export default function Signup() {
   return (
     <>
       <main>
         <div className="bg-white flex justify-center items-center">
           <div className="py-12 px-12 bg-white rounded-2xl shadow-xl z-20">
             <div>
-              <h1 className="text-3xl font-bold text-center mb-4 cursor-pointer">Log In</h1>
+              <h1 className="text-3xl font-bold text-center mb-4 cursor-pointer">Sign Up</h1>
               <p className="w-80 text-center text-sm mb-8 font-semibold text-gray-700 tracking-wide cursor-pointer"></p>
             </div>
             <form>
@@ -34,12 +34,8 @@ export default function Login() {
                   Log In
                 </button>
               </div>
-
-              <div className="text-end mt-6 flex flex-row justify-center">
-                <p>Toujours pas de compte ? : </p>
-                <Link to={'../signup'} className="text-blue-600 hover:text-blue-700">
-                  Sign Up
-                </Link>
+              <div className="text-end mt-6 flex flex-row justify-end">
+                <Link to={'../login'}> LogIn</Link>
               </div>
             </form>
           </div>

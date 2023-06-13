@@ -10,6 +10,10 @@ export type Product = {
   distance: number;
   place: number;
 };
+
+type Props = {
+  product: Product;
+};
 export const calculatePrice = (product: Product) => {
   return (
     Math.round(
@@ -19,8 +23,26 @@ export const calculatePrice = (product: Product) => {
   );
 };
 
-export const products: Product[] = await fetch('http://localhost:3000/products').then(function (
-  response,
-) {
-  return response.json();
-});
+export const ProductCard = (props: Props) => {
+  return (
+    <>
+      <div className="col-start-1 row-start-1">
+        <p>
+          {props.product.heure} : {props.product.minute} h
+        </p>
+        <p>
+          {props.product.depart} &rarr; {props.product.destination}
+        </p>
+      </div>
+      <div className="col-start-2 row-start-1 text-end">
+        <p>{calculatePrice(props.product)} €</p>
+      </div>
+      <div className="col-start-1 row-start-2">
+        <h3 className="text-start">{props.product.name}</h3>
+      </div>
+      <div className="col-start-2 row-start-2 text-end">
+        <p>Place : {props.product.place}</p>
+      </div>
+    </>
+  );
+};

@@ -25,3 +25,9 @@ La partie back-end vas utiliser 2 frameworks :
   - Intégrer avec les moteurs de rendu de « vues » dans le but de générer des réponses en insérant des données dans des templates
   - Ajouter des requêtes de traitement « middleware » où vous le voulez dans le tunnel gestionnaire de la requête
 - Mongoose : Mongoose est un mappeur de document objet (Object-Relational Mapping). 
+
+(((((((utiliser [swagger-ui-express](https://www.npmjs.com/package/swagger-ui-express)))))))
+
+## Visuel du site
+
+## Fonctionnement
