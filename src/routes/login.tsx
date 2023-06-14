@@ -1,7 +1,16 @@
 import '../index.css';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { UserContext, UserDispatchContext } from '../Components/Context.tsx';
 
 export default function Login() {
+  const userDetails = useContext(UserContext);
+  const setUserDetails = useContext(UserDispatchContext);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert();
+  };
+
   return (
     <>
       <main>
@@ -11,7 +20,7 @@ export default function Login() {
               <h1 className="text-3xl font-bold text-center mb-4 cursor-pointer">Log In</h1>
               <p className="w-80 text-center text-sm mb-8 font-semibold text-gray-700 tracking-wide cursor-pointer"></p>
             </div>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="space-y-4">
                 <input
                   type="email"

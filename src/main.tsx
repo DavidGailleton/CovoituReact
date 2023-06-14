@@ -9,6 +9,7 @@ import Post from './routes/post.tsx';
 import Error from './Components/Error.tsx';
 import Default from './routes/default.tsx';
 import Signup from './routes/signup.tsx';
+import { UserProvider } from './Components/Context.tsx';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <UserProvider>
+      <RouterProvider router={router} />
+    </UserProvider>
   </React.StrictMode>,
 );
